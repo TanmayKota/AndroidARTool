@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Container where GLSurfaceView will be added programmatically -->
+    <FrameLayout
+        android:id="@+id/gl_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <!-- Toggle button (top center) -->
+    <Button
+        android:id="@+id/button_toggle_camera"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Show Camera"
+        android:layout_gravity="top|center_horizontal"
+        android:layout_marginTop="24dp" />
+
+    <!-- Status text (bottom center) -->
+    <TextView
+        android:id="@+id/status_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Waiting..."
+        android:layout_gravity="bottom|center_horizontal"
+        android:layout_marginBottom="16dp" />
+</FrameLayout>
